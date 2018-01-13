@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+  color: White;
+  font-family: 'Playfair display', serif;
+}
+
+.mypic {
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  margin-top: 0px;
+  border-radius: 10px;
+}
+
+.contact {
+  margin-bottom: 20px;
+}
+
+.conbox {
+  font-size: 17px;
+}
+
+.intro {
+  width: 1050px;
+}
+
+h1 {
+  color: orange;
+}
+
+h2 {
+  color: orange;
+}
