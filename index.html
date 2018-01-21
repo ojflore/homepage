@@ -6,37 +6,78 @@
 <meta charset="utf-8">
 <title>Jose Flores</title>
 </head>
-<body>
-  <div class="ctn">
-    <center>
-    <h1>Welcome!</h1>
-      <p class="intro">
-        My name is Jose Flores and I am a Veteran of the U.S. Coast Guard where I served for 8 years.
-        I am a senior at Point Park University enrolled in the Information Technology
-        program. I am a full-time intern for U.S. Steel working as an Application Architect in the
-        Enterprise Architecture and Optimization Team. I enjoy developing my programming skills and I am highly
-        interested in a career in development, project management/business analysis, or database management.
-        Please continue browsing through my webpage for more information!
-      </p>
+<body id="home">
+    <div class="navbar" id="navbar">
+        <ul>
+          <li><a class="current" href="#home">Home</a></li>
+          <li><a href="#intro">About Me</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="ctn" id="intro">
+      <center>
+        <h1>Welcome!</h1>
+          <p class="intro">
+            My name is Jose Flores and I am a Veteran of the U.S. Coast Guard where I served for 8 years.
+            I am a senior at Point Park University enrolled in the Information Technology
+            program. I am a full-time intern for U.S. Steel working as an Application Architect in the
+            Enterprise Architecture and Optimization Team. I enjoy developing my programming skills and I am highly
+            interested in a career in development, project management/business analysis, or database management.
+            Please continue browsing through my webpage for more information!
+          </p>
       <div>
         <img class="mypic" src="jose.jpg"/>
       </div>
     </center>
 
-    <h2>Interests</h2>
-    <p>My interests include spending time with my wife and 3 year old daughter. As you can imagine, my life is quite
-      busy with a 3 year old girl running around. When I am not working, going to school, or playing with my daughter, you can find
-      me working out at my crossfit gym in the North Hills! </p>
+    <h2 id="interests">Interests</h2>
+    <div class="interests">
+      <p> My interests include spending time with my wife and 3 year old daughter. As you can imagine, my life is quite
+        busy with a 3 year old girl running around. When I am not working, going to school, or playing with my daughter, you can find
+        me working out at my crossfit gym in the North Hills!
+      </p>
+    </div>
 
-      <h2>
-        Current Courses - Spring 2018:
-      </h2>
-      <li>Senior Project</li>
-      <li>Advanced Programming</li>
-      <li>Business Analytics</li>
-      <li>Server Management</li>
+    <h2 id="courses">Current Courses - Spring 2018:</h2>
+      <div class="courses">
+        <li>Senior Project</li>
+        <li>Advanced Programming</li>
+        <li>Business Analytics</li>
+        <li>Server Management</li>
+      </div>
 
-      <center>
+    <h2>Courses Needed to Graduate</h2>
+      <table class"table">
+        <tr>
+          <th>Course</th>
+          <th>Description</th>
+          <th>Course Number</th>
+          <th>Term</th>
+        </tr>
+        <tr>
+          <td>Web Applications</td>
+          <td>IT Elective - Independent Study</td>
+          <td>CMPS 361</td>
+          <td>Summer 2018</td>
+        </tr>
+        <tr>
+          <td>Corporate Finance</td>
+          <td>Business Requirement</td>
+          <td>BMGT 300</td>
+          <td>Summer 2018</td>
+        </tr>
+        <tr>
+          <td>Management Science</td>
+          <td>Business Requirement</td>
+          <td>BMGT 310</td>
+          <td>Summer 2018</td>
+        </tr>
+      </table>
+
+      <!-- <center> -->
       <div class="contact" id="contact">
         <h2>Contact</h2>
           <div class="conbox">
@@ -46,14 +87,14 @@
               </br>
               <address> Phone: (240) 344-9447</address>
          </div>
-      </div>
-      <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US"
+
+      <!-- <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US"
       data-type="vertical" data-theme="dark" data-vanity="jose-flores-884068144">
       <a class="LI-simple-link" href='https://www.linkedin.com/in/jose-flores-884068144?trk=profile-badge'>Jose Flores
-      </a>
+      </a> -->
+      </div>
     </div>
-  </center>
-  </div>
+  <div class="footer"> @ 2018 Jose Flores </div>
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </body>
 </html>
