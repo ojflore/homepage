@@ -1,100 +1,321 @@
 <!doctype html>
-<html>
+<html lang="en-US">
 <head>
-<link rel="stylesheet" type="text/css" href="style.css"/>
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-<meta charset="utf-8">
-<title>Jose Flores</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Satisfy" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ovo" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <title>Jose Flores</title>
 </head>
-<body id="home">
-    <div class="navbar" id="navbar">
-        <ul>
-          <li><a class="current" href="#home">Home</a></li>
-          <li><a href="#intro">About Me</a></li>
-          <li><a href="#interests">Interests</a></li>
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+<body>
+  <div class="ctn">
+  <center>
+    <div class="landingPage" id="home">
+
+  <!-- Navigation bar/menu -->
+      <div class="topnav" id="topnav">
+        <li><a id="top" href="#home">Home</a></li>
+        <li><a id="about" href="#myInfo">About Me</a></li>
+        <li><a id="cour" href="#course">Courses</a></li>
+        <li><a id="por" href="#portfolio">Portfolio</a></li>
+        <li><a id="award" href="#awards">Awards</a></li>
+        <li><a id="cont" href="#contact">Contact</a></li>
+        <div class="search">
+          <form method="get" action="" id="searchForm">
+          <input type="text" class="txt" id="searchinput" placeholder=" Search..." />
+          <button onclick="searchSite()" class="search-icon"><i class="fa fa-search"></i></search-icon>
+          </form>
+        </div>
       </div>
 
-      <div class="ctn" id="intro">
-      <center>
-        <h1>Welcome!</h1>
-          <p class="intro">
-            My name is Jose Flores and I am a Veteran of the U.S. Coast Guard where I served for 8 years.
-            I am a senior at Point Park University enrolled in the Information Technology
-            program. I am a full-time intern for U.S. Steel working as an Application Architect in the
-            Enterprise Architecture and Optimization Team. I enjoy developing my programming skills and I am highly
-            interested in a career in development, project management/business analysis, or database management.
-            Please continue browsing through my webpage for more information!
-          </p>
-      <div>
-        <img class="mypic" src="jose.jpg"/>
-      </div>
-    </center>
+<!-- Landing Page Quote -->
+    <div class="quote">
+      <q>A man travels the world over in search of what he needs and returns home to find it.</q> - George A. Moore
+    </div>
+  </div>
 
-    <h2 id="interests">Interests</h2>
-    <div class="interests">
-      <p> My interests include spending time with my wife and 3 year old daughter. As you can imagine, my life is quite
-        busy with a 3 year old girl running around. When I am not working, going to school, or playing with my daughter, you can find
-        me working out at my crossfit gym in the North Hills!
-      </p>
+<div class="myInfo" id="myInfo">
+    <h1>About Me</h1>
+    <p class="smallBio">
+      I am a Veteran of the U.S. Coast Guard where I served for 8 years.
+      I am a senior at Point Park University enrolled in the Information Technology
+      program. As a member of the Coast Guard, I performed many jobs and gained a myriad of experience in leadership, technical, analytical, and
+      problem solving skills. My skills and experience can help any company accomplish their goals.
+      I enjoy developing my programming skills and am highly interested in a career in development,
+      project management/business analysis, or database management. I believe that I would be a valuable
+      asset to any company and would be a great addition to any team.
+    </p>
+    <div>
+      <img class="mypic" src="jose.jpg"/>
+    </div>
+    <br>
+    <a class="res" href="Jose_Flores_Resume.pdf" target="_blank">View My Resume</a>
+  </div>
+
+
+  <div class="course-section" id="course">
+    <h1>Point Park University</h1>
+    <br>
+     <div class="curr-course">
+       <h2>Current Courses - Spring 2018:</h2>
+           <ol>Senior Project</ol>
+           <ol>Advanced Programming</ol>
+           <ol>Business Analytics</ol>
+           <ol>Server Management</ol>
+     </div>
+
+    <br>
+    <div class="table-section">
+      <h2>Courses Needed to Graduate:</h2>
+       <table class"table">
+         <tr>
+           <th>Course</th>
+           <th>Description</th>
+           <th>Course Number</th>
+           <th>Term</th>
+         </tr>
+         <tr>
+           <td>Web Applications</td>
+           <td>IT Elective - Independent Study</td>
+           <td>CMPS 361</td>
+           <td>Summer 2018</td>
+         </tr>
+         <tr>
+           <td>Corporate Finance</td>
+           <td>Business Requirement</td>
+           <td>BMGT 300</td>
+           <td>Summer 2018</td>
+         </tr>
+         <tr>
+           <td>Management Science</td>
+           <td>Business Requirement</td>
+           <td>BMGT 310</td>
+           <td>Summer 2018</td>
+         </tr>
+       </table>
+     </div>
+  </div>
+
+  <div class="port" id="portfolio">
+    <center>
+    <h1>Portfolio</h1>
+    <p class="uc">(Under Construction)</p>
+      <div class="calc" style="width:261px; float:left; margin-left:30px">
+        <h2><B><font color="black" style="font-size:30px; font-family:'lobster Two', cursive; float:left; margin-left:75px; margin-top:20px">Calculator</font></h2></B>
+        <form name="Calculator">
+          <input name="display" placeholder="0" style="width:254px; height:60px; text-align:right; background-color: black; color: white;
+          font-size:30px; border-radius:8px"/>
+          <br>
+          <input type="button" value="7" onclick="document.Calculator.display.value +='7'" style="width:60px; height:60px; font-size:30px; border-radius:8px; margin-top:3px; background-color:grey; color: white;"/>
+          <input type="button" value="8" onclick="document.Calculator.display.value +='8'" style="width:60px; height:60px; font-size:30px; border-radius:8px; background-color:grey; color: white;"/>
+          <input type="button" value="9" onclick="document.Calculator.display.value +='9'" style="width:60px; height:60px; font-size:30px; border-radius:8px; background-color:grey; color: white;"/>
+          <input type="button" value="+" onclick="add()" style="width:60px; height:60px; font-size:30px; border-radius:8px; background-color:grey; color: white;"/>
+          <br>
+          <input type="button" value="4" onclick="document.Calculator.display.value +='4'" style="width:60px; height:60px; font-size:30px; border-radius:8px; margin-top:3px; background-color:grey; color: white;"/>
+          <input type="button" value="5" onclick="document.Calculator.display.value +='5'" style="width:60px; height:60px; font-size:30px; border-radius:8px; background-color:grey; color: white;"/>
+          <input type="button" value="6" onclick="document.Calculator.display.value +='6'" style="width:60px; height:60px; font-size:30px; border-radius:8px; background-color:grey; color: white;"/>
+          <input type="button" value="-" onclick="subtract()" style="width:60px; height:60px; font-size:30px; border-radius:8px; background-color:grey; color: white;"/>
+          <br>
+          <input type="button" value="1" onclick="document.Calculator.display.value +='1'" style="width:60px; height:60px; font-size:30px; border-radius:8px; margin-top:3px; background-color:grey; color: white;"/>
+          <input type="button" value="2" onclick="document.Calculator.display.value +='2'" style="width:60px; height:60px; font-size:30px; border-radius:8px; background-color:grey; color: white;"/>
+          <input type="button" value="3" onclick="document.Calculator.display.value +='3'" style="width:60px; height:60px; font-size:30px; border-radius:8px; background-color:grey; color: white;"/>
+          <input type="button" value="*" onclick="multiply()" style="width:60px; height:60px; font-size:30px; border-radius:8px; background-color:grey; color: white;"/>
+          <br>
+          <input type="button" value="0" onclick="document.Calculator.display.value +='0'" style="width:60px; height:60px; font-size:30px; border-radius:8px; margin-top:3px; background-color:grey; color: white;"/>
+          <input type="button" value="%" onclick="percent()" style="width:60px; height:60px; font-size:30px; border-radius:8px; background-color:grey; color: white;"/>
+          <input type="button" value="." onclick="decimal()" style="width:60px; height:60px; font-size:30px; border-radius:8px; background-color:grey; color: white;"/>
+          <input type="button" value="/" onclick="divide()" style="width:60px; height:60px; font-size:30px; border-radius:8px; background-color:grey; color: white;"/>
+          <br>
+          <input type="button" value="Clear" onclick="clearBtn()" style="width:190px; height:60px; font-size:30px; border-radius:8px; margin-top:3px; background-color:grey; color: white;"/>
+          <input type="button" value="=" onclick="document.Calculator.display.value = eval(document.Calculator.display.value)" style="width:60px; height:60px; font-size:30px; border-radius:8px; background-color:grey; color: white;"/>
+          <br>
+        </form>
+      </div>
+  </div>
+
+  <div class="awards" id="awards">
+    <center>
+    <h1>Awards and Recognitions</h1>
+      <h4>(click on the awards below for more information)</h4>
+        <ol>
+          <li class="popup1" onclick="popFunc1()">Coast Guard Commendation Medal
+            <span class="popuptext1" id="awardPop1">Heroic achievement in saving the lives
+              of two passengers after a vehicle accident</span>
+          </li>
+          <li class="popup2" onclick="popFunc2()">Coast Guard Achievement Medal
+            <span class="popuptext2" id="awardPop2">Superior performance at CG Air Station Houston</span>
+          </li>
+          <li class="popup3" onclick="popFunc3()">Coast Guard Good Conduct Medal
+            <span class="popuptext3" id="awardPop3">Adhering to the Coast Guard's core values of
+              Honor, Respect, and Devotion to Duty</span>
+          </li>
+          <li class="popup4" onclick="popFunc4()">National Defense Medal
+            <span class="popuptext4" id="awardPop4">Service during the War on
+              Terrorism after September 11, 2001</span>
+          </li>
+        </ol>
+      </center>
     </div>
 
-    <h2 id="courses">Current Courses - Spring 2018:</h2>
-      <div class="courses">
-        <li>Senior Project</li>
-        <li>Advanced Programming</li>
-        <li>Business Analytics</li>
-        <li>Server Management</li>
-      </div>
+  <div class="contact" id="contact">
+    <center>
+    <h1>Contact</h1>
+      <div class="conbox">
+          <address>Pittsburgh, PA</address>
+          </br>
+          <address>Email Address: ojoseflores89@gmail.com</address>
+          </br>
+          <address> Phone: (240) 344-9447</address>
+     </div>
+   </center>
+  </div>
 
-    <h2>Courses Needed to Graduate</h2>
-      <table class"table">
-        <tr>
-          <th>Course</th>
-          <th>Description</th>
-          <th>Course Number</th>
-          <th>Term</th>
-        </tr>
-        <tr>
-          <td>Web Applications</td>
-          <td>IT Elective - Independent Study</td>
-          <td>CMPS 361</td>
-          <td>Summer 2018</td>
-        </tr>
-        <tr>
-          <td>Corporate Finance</td>
-          <td>Business Requirement</td>
-          <td>BMGT 300</td>
-          <td>Summer 2018</td>
-        </tr>
-        <tr>
-          <td>Management Science</td>
-          <td>Business Requirement</td>
-          <td>BMGT 310</td>
-          <td>Summer 2018</td>
-        </tr>
-      </table>
+  </div>
+  </center>
+  <footer>@2017 by Jose Flores</footer>
+  <script>
 
-      <!-- <center> -->
-      <div class="contact" id="contact">
-        <h2>Contact</h2>
-          <div class="conbox">
-              <address>Pittsburgh, PA</address>
-              </br>
-              <address>Email Address: ojflore@pointpark.edu</address>
-              </br>
-              <address> Phone: (240) 344-9447</address>
-         </div>
+  function searchSite(){
+    var inputted=document.getElementById("searchinput").value;
+    var searchForm=document.getElementById("searchForm");
+  searchForm.action="http://www.google.com";
+  searchForm.submit();
+}
 
-      <!-- <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US"
-      data-type="vertical" data-theme="dark" data-vanity="jose-flores-884068144">
-      <a class="LI-simple-link" href='https://www.linkedin.com/in/jose-flores-884068144?trk=profile-badge'>Jose Flores
-      </a> -->
-      </div>
-    </div>
-  <div class="footer"> @ 2018 Jose Flores </div>
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+  //Change to spanish and back to english
+  // $('[lang="es"]').hide();
+  //
+  // $('#switch-lang').click(function() {
+  //   $('[lang="es"]').toggle();
+  //   $('[lang="en"]').toggle();
+  // });
+
+//Highlights current tab selected
+  function setActiveLink(setActive){
+    if ($("a").hasClass('active')) {
+    }
+        $("a").removeClass('active');
+    if (setActive) {
+        $("#"+setActive).addClass('active');
+      }
+    }
+
+  $(function() {
+      $("a").click(function() {
+          setActiveLink(this.id);
+      });
+  });
+
+//Highlights tab scrolled to
+  $(document).ready(function () {
+      $(document).on("scroll", onScroll);
+
+      //smoothscroll
+      $('a[href^="#"]').on('click', function (e) {
+          e.preventDefault();
+          $(document).off("scroll");
+
+          $('a').each(function () {
+              $(this).removeClass('active');
+          })
+          $(this).addClass('active');
+
+          var target = this.hash,
+              menu = target;
+          $target = $(target);
+          $('html, body').stop().animate({
+              'scrollTop': $target.offset().top+2
+          }, 500, 'swing', function () {
+              window.location.hash = target;
+              $(document).on("scroll", onScroll);
+          });
+      });
+  });
+
+// Use Your Class or ID For Selection
+
+  function onScroll(event){
+      var scrollPos = $(document).scrollTop();
+      $('#topnav li a').each(function () {
+          var currLink = $(this);
+          var refElement = $(currLink.attr("href"));
+          if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+              $('#topnav li a').removeClass("active");
+              currLink.addClass("active");
+          }
+          else{
+              currLink.removeClass("active");
+          }
+      });
+  }
+
+
+
+$("a").click(function() {
+  if ($("a" === this)) {
+    $("a.current").removeClass("current");
+    $(this).addClass("current");
+  }
+});
+
+function popFunc1() {
+  var popup = document.getElementById("awardPop1");
+  if (popup === true) {
+    popup.classList.toggle("show");
+    } else {
+      popup.classList.toggle("hide");
+    }
+}
+
+function popFunc1() {
+  var popup = document.getElementById("awardPop1");
+  popup.classList.toggle("show");
+}
+function popFunc2() {
+  var popup = document.getElementById("awardPop2");
+  popup.classList.toggle("show");
+}
+function popFunc3() {
+  var popup = document.getElementById("awardPop3");
+  popup.classList.toggle("show");
+}
+function popFunc4() {
+  var popup = document.getElementById("awardPop4");
+  popup.classList.toggle("show");
+  // console.log("hi, i was clicked");
+}
+function add() {
+  document.Calculator.display.value +="+";
+  document.Calculator.display.style.textAlign="right";
+}
+function subtract() {
+  document.Calculator.display.value +="-";
+  document.Calculator.display.style.textAlign="right";
+}
+function multiply() {
+  document.Calculator.display.value +="*";
+  document.Calculator.display.style.textAlign="right";
+}
+function percent() {
+  document.Calculator.display.value +="%";
+  document.Calculator.display.style.textAlign="right";
+}
+function decimal() {
+  document.Calculator.display.value +=".";
+  document.Calculator.display.style.textAlign="right";
+}
+function divide() {
+  document.Calculator.display.value +="/";
+  document.Calculator.display.style.textAlign="right";
+}
+function clearBtn() {
+  document.Calculator.display.value ="";
+  document.Calculator.display.style.textAlign="right";
+}
+</script>
 </body>
 </html>

@@ -1,110 +1,448 @@
-html, body {
-  background-color: black;
-  color: White;
-  font-family: 'Playfair display', serif;
-  padding: 0;
+body {
   margin: 0;
-}
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 .ctn {
-  padding-top: 75px;
-}
-
-.navbar {
-  width: 100%;
+  width: auto;
   height: auto;
-  background-color: white;
-  position: fixed !important;
 }
 
-#navbar li {
-  display: inline-flex;
+.topnav li {
+  list-style: none;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: orange;
+  color: white;
+}
+
+.search {
+  float: right;
+  padding-top: 12px;
+  padding-right: 50px;
+}
+
+.txt {
+  border-radius: 5px;
+}
+
+.landingPage {
+  color: White;
+  width: 100%;
+  height: 620px;
+  font-family: Futura, Impact, Helvetica, Arial, sans-serif;
+  background-image: url("me.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.quote {
+  position: relative;
+  z-index: 0;
+  top: 555px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Lobster Two', cursive;
   padding: 10px;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.3em;
+.ctn h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Satisfy', cursive;  display: inline;
+  font-size: 30px;
 }
 
-.intro {
-  width: 1050px;
-  margin: auto;
-  text-align: center;
-  margin-top: 25px;
+.smallBio {
+  font-family: "Ovo", serif;
+  font-size: 1.4em;
+  padding: 0px 40px 0px 40px;
+}
+
+.myInfo {
+  background-color: white;
+  width: 100%;
+  height: 600px;
+  color: black;
+  padding-top: 65px;
+  padding-bottom: 0px;
+  /*margin-bottom: 50px;*/
+}
+
+.myInfo h1 {
+  margin-top: 50px;
+  /*border: 1px solid red;*/
+  /*position: relative;*/
+  height: 100%;
 }
 
 .mypic {
   width: 200px;
   height: 200px;
-  border: 3px solid white;
-  margin-top: 50px;
-  margin-bottom: 25px;
+  border: 3px solid black;
+  margin-top: 0px;
   border-radius: 10px;
 }
 
-.interests {
-  padding: 10px;
-  margin-left: 5px;
-}
-
-.courses {
-  padding: 10px;
-  margin-left: 5px;
-}
-
-h1 {
-  color: orange;
-  padding: 10px;
-}
-
-h2 {
-  color: orange;
-  padding: 10px;
-}
-
-h2 {
-  color: orange;
-  padding: 10px;
-}
-
-.table {
+.res {
+  text-decoration: none;
+  border: solid 2px black;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: "Ovo", serif;
+  background-color: black;
   color: white;
+}
+
+.res:hover {
+  color:black;
+  background: white;
+}
+
+.course-section {
+  background: black;
+  color: white;
+  width: 100%;
+  padding-top: 70px;
+  height: 650px;
+  /* border: 1px solid red; */
 }
 
 table, th, td {
   border: 1px solid white;
-  margin-left: 10px;
-  padding: 5px;
-  /* border-collapse: collapse; */
+  /* margin-left: 10px; */
+  padding: 10px;
+  font-size: 1.1em;
+  color: orange;
+}
+
+h2 {
+  font-family: sans-serif;:
+}
+
+ol {
+  text-align: center;
+  /* border: solid 1px red; */
+  padding: 0;
+  margin: 5px;
+  color: orange;
+  font-size: 1.2em;
+}
+
+.uc {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+p {
+  font-family: 'Lobster Two', cursive;
+  font-size: 1.5em;
+}
+
+.port {
+  background-color: white;
+  height: 600px;
+  width: 100%;
+  color: black;
+  /*margin-top: 70px;*/
+  padding-top: 70px;
+}
+
+.awards {
+  padding-top: 70px;
+  height: 600px;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+h4 {
+  margin-top: 50px;
+  position: relative;
+  font-size: 1.1em;
+  font-family: 'lobster two', cursive;
+  color: white;
+}
+
+.awards ol {
+  color: white;
+  /*border: 1px solid red;*/
+  position: relative;
+  padding: 0;
+  margin-top: 50px;
+  background-color: black;
+  font-size: 1.3em;
+  z-index: 0;
+  display: grid;
 }
 
 .contact {
+  height: 600px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 65px 0 10px 0;
   text-align: center;
-  margin: 50px;
 }
 
 .conbox {
-  font-size: 17px;
-  margin-top: 10px;
+  margin-top: 90px;
+  border: 3px solid black;
+  border-radius: 10px;
+  height: 200px;
+  width: 800px;
+  padding: 30px 0 30px 0;
+  font-size: 2em;
 }
-/*
-.LI-profile-badge {
-  margin: 25px;
-} */
 
-.footer {
+body {
+  margin: 0;
+  background-color: white;
+}
+
+footer {
+  color: white;
+  /*border: solid 1px red;*/
+  text-align: center;
+  background-size: auto;
+  background-color: #333;
+  padding: 50px 0 50px 0;
+  margin: 0;
+}
+
+.popup1 {
+    /*width: 500px;*/
+    padding: 10px;
+    /*border: 1px solid red;*/
+    position: relative;
+    display: inline-block;
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.2em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup2 {
+    /*width: 500px;*/
+    padding: 10px;
+    /*border: 1px solid red;*/
+    position: relative;
+    display: inline-block;
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.2em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup3 {
+    /*width: 500px;*/
+    padding: 10px;
+    /*border: 1px solid red;*/
+    position: relative;
+    display: inline-block;
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.2em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup4 {
+    /*width: 500px;*/
+    padding: 10px;
+    /*border: 1px solid red;*/
+    position: relative;
+    display: inline-block;
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.2em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup1 .popuptext1 {
+  font-family: inherit;
+  font-size: .9em;
+  width: 800px;
+  height: 75px;
+  visibility: hidden;
+  background-color: white;
   color: black;
   text-align: center;
-  background-color: white;
-  padding: 40px 0 40px 0;
+  border-radius: 10px;
   position: absolute;
-  right: 0;
-  left: 0;
+  z-index: 1;
+  bottom: 40px;
+  padding-top: 45px;
+  margin-left: -561px;
+  border: 3px solid grey;
+}
+
+.popup2 .popuptext2 {
+  font-family: inherit;
+  font-size: .9em;
+  width: 800px;
+  height: 75px;
+  visibility: hidden;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 40px;
+  padding-top: 45px;
+  margin-left: -550px;
+  border: 3px solid grey;
+}
+
+.popup3 .popuptext3 {
+  font-family: inherit;
+  font-size: .9em;
+  width: 800px;
+  height: 75px;
+  visibility: hidden;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 40px;
+  padding-top: 45px;
+  margin-left: -556px;
+  border: 3px solid grey;
+}
+
+.popup4 .popuptext4 {
+  font-family: inherit;
+  font-size: .9em;
+  width: 800px;
+  height: 75px;
+  visibility: hidden;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 40px;
+  padding-top: 45px;
+  margin-left: -512px;
+  border: 3px solid grey;
+}
+
+/* Popup arrow */
+.popup1 .popuptext1::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+.popup2 .popuptext2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+.popup3 .popuptext3::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+.popup4 .popuptext4::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup1 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.popup2 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.popup3 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.popup4 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
 }
